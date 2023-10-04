@@ -19,14 +19,14 @@ For the second example, I reset the directory back to '/home/' and then ran the 
 For the third example, running the command with a path to a file will result in nothing happening as the command's purpose is to list all of the contents directly under the target directory, however, in the case of a file, nothing will output as there are no sub-directories or files within that file.
 
 ## cat
-<img width="429" alt="image" src="https://github.com/AnikAlam/cse15l-lab-reports/assets/55520027/c1851844-0556-4157-be42-e477b601078c">
+<img width="306" alt="image" src="https://github.com/AnikAlam/cse15l-lab-reports/assets/55520027/32c024e3-fdef-4045-a2da-9193527de814">
 
 Finally onto the 'cat' command, after running it with no arguments, the terminal allowed me to continuously hit the enter key or type out any sort of text. If I did type out text and hit enter, the terminal would output the exact same text and return back to the previous stage of allowing me to hit enter or type in some input. Because I was unsure on how to escape or be able to enter in a new command, I created a new terminal in order to continue working on the lab. The working directory was the home directory. Through one of the TAs, I learned that it is possible to break out of the loop by pressing 'control + c'.
 
-<img width="429" alt="image" src="https://github.com/AnikAlam/cse15l-lab-reports/assets/55520027/846cd153-74b6-422d-8454-bd4529e5dc45">
+<img width="359" alt="image" src="https://github.com/AnikAlam/cse15l-lab-reports/assets/55520027/4fa44102-9001-4b95-8951-7677baa1cc66">
 
 In the second example, running the command with a path to a directory as an argument caused the terminal to return a message stating that the path given led it to a directory. Because the command is used for viewing or creating a file, when given a directory I believe that it returns that message as sort of an error message. The working directory was the home directory and the path given was '/home/lecture1/'
 
-<img width="429" alt="image" src="https://github.com/AnikAlam/cse15l-lab-reports/assets/55520027/8a903296-81b5-400a-94fd-900e22d13947">
+<img width="497" alt="image" src="https://github.com/AnikAlam/cse15l-lab-reports/assets/55520027/573de471-a5ea-4a88-9d19-7985bd9c844c">
 
 In the third example, a path to a file was given as the argument for the command and the output onto the terminal consisted of the contents within the file as expected. Because this command is used for viewing/creating files, it is expected that this would have been the outcome unlike the first two examples where non-compatible arguments were given. The working directory was also the home directory in this example.
