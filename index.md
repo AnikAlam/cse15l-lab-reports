@@ -6,11 +6,11 @@
 Starting with the 'cd' command, I found that the command alone does not make any sort of change because the purpose of the command is to change the directory, and without any arguments or a target directory to go to, nothing will happen. In the second example, I gave the argument 'cd /home/lecture1' which gave a corresponding result of changing the directory to 'lecture1'. And finally with the third example of using the command with a path to a file as the argument, the terminal gave an error because again, the purpose of the command is to change *directories*, and a file is not a directory, therefore it is an invalid argument. The output for the third example was an error because it was given a file path as an argument which is not compatible with the command.
 
 ## ls
-<img width="527" alt="image" src="https://github.com/AnikAlam/cse15l-lab-reports/assets/55520027/b62832a7-8bed-4e4c-a4c9-2291a9bd1b1c">
+<img width="200" alt="image" src="https://github.com/AnikAlam/cse15l-lab-reports/assets/55520027/79f74b5c-a3e3-402f-b67d-468cd39f714a">
 
 Moving onto the 'ls' command, I trialed the first example first in the home directory, which is why it gave an output of only 'lecture1' as it is the only directory within the home. Afterwards I changed the directory to 'lecture1' and ran the command which listed all of the files within. The working directory had been the home directory in the first portion, and then I had changed it to lecture1 to test what the difference was. The output was not an error and gave the expected results.
 
-<img width="527" alt="image" src="https://github.com/AnikAlam/cse15l-lab-reports/assets/55520027/cd0ea400-a2c5-4880-8a22-6b1946457e0a">
+<img width="383" alt="image" src="https://github.com/AnikAlam/cse15l-lab-reports/assets/55520027/b4cf44cb-ef53-462b-b922-54de69aa6197">
 
 For the second example, I reset the directory back to '/home/' and then ran the command with the argument 'ls /home/lecture1/' which output four items which it should as those are the four items present within the 'lecture1' directory. The output was not an error and the command with the given argument worked as expected.
 
