@@ -1,2 +1,0 @@
-*Italic*
-# Heading 1
