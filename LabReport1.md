@@ -2,12 +2,16 @@
 
 ***
  `cd`
+
+ 
 <img width="527" alt="image" src="https://github.com/AnikAlam/cse15l-lab-reports/assets/55520027/99adb57d-eab6-44b6-acbd-74cff57cf224">
 
 Starting with the ` cd ` command, I found that the command alone does not make any sort of change because the purpose of the command is to change the directory, and without any arguments or a target directory to go to, nothing will happen. In the second example, I gave the argument `cd /home/lecture1` which gave a corresponding result of changing the directory to `lecture1`. And finally with the third example of using the command with a path to a file as the argument, the terminal gave an error because again, the purpose of the command is to change *directories*, and a file is not a directory, therefore it is an invalid argument. The output for the third example was an error because it was given a file path as an argument which is not compatible with the command.
 
 ***
 `ls`
+
+
 <img width="200" alt="image" src="https://github.com/AnikAlam/cse15l-lab-reports/assets/55520027/79f74b5c-a3e3-402f-b67d-468cd39f714a">
 
 Moving onto the `ls` command, I trialed the first example first in the home directory, which is why it gave an output of only `lecture1` as it is the only directory within the home. Afterwards I changed the directory to `lecture1` and ran the command which listed all of the files within. The working directory had been the home directory in the first portion, and then I had changed it to `lecture1` to test what the difference was. The output was not an error and gave the expected results.
@@ -22,6 +26,8 @@ For the third example, running the command with a path to a file will result in 
 
 ***
 `cat`
+
+
 <img width="306" alt="image" src="https://github.com/AnikAlam/cse15l-lab-reports/assets/55520027/32c024e3-fdef-4045-a2da-9193527de814">
 
 Finally onto the 'cat' command, after running it with no arguments, the terminal allowed me to continuously hit the enter key or type out any sort of text. If I did type out text and hit enter, the terminal would output the exact same text and return back to the previous stage of allowing me to hit enter or type in some input. Because I was unsure on how to escape or be able to enter in a new command, I created a new terminal in order to continue working on the lab. The working directory was the home directory. Through one of the TAs, I learned that it is possible to break out of the loop by pressing `control + c`.
