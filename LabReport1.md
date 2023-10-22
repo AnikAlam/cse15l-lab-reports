@@ -6,12 +6,13 @@
  
 <img width="527" alt="image" src="https://github.com/AnikAlam/cse15l-lab-reports/assets/55520027/99adb57d-eab6-44b6-acbd-74cff57cf224">
 
-Starting with the ` cd ` command, I found that the command alone does not make any sort of change because the purpose of the command is to change the directory, and without any arguments or a target directory to go to, nothing will happen. In the second example, I gave the argument `cd /home/lecture1` which gave a corresponding result of changing the directory to `lecture1`. And finally with the third example of using the command with a path to a file as the argument, the terminal gave an error because again, the purpose of the command is to change *directories*, and a file is not a directory, therefore it is an invalid argument. The output for the third example was an error because it was given a file path as an argument which is not compatible with the command.
+Starting with the `cd` command, I found that the command alone does not make any sort of change because the purpose of the command is to change the directory, and without any arguments or a target directory to go to, nothing will happen. In the second example, I gave the argument `cd /home/lecture1` which gave a corresponding result of changing the directory to `lecture1`. And finally with the third example of using the command with a path to a file as the argument, the terminal gave an error because again, the purpose of the command is to change *directories*, and a file is not a directory, therefore it is an invalid argument. The output for the third example was an error because it was given a file path as an argument which is not compatible with the command.
 
 The working directory in the first case had been the default directory since I had yet to change the directory, however as mentioned in the second example, I had changed the working directory to `/home/lecture1`. And as mentioned in the third example, the working directory remained `/home/lecture1` because the argument given was a file path which is not a valid directory to traverse to.
-***
-`ls`
 
+***
+
+`ls`
 
 <img width="200" alt="image" src="https://github.com/AnikAlam/cse15l-lab-reports/assets/55520027/79f74b5c-a3e3-402f-b67d-468cd39f714a">
 
