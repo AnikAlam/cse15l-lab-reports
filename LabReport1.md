@@ -28,13 +28,14 @@ For the second example, I reset the directory back to `/home/` and then ran the 
 For the third example, running the command with a path to a file will result in nothing happening as the command's purpose is to list all of the contents directly under the target directory, however, in the case of a file, nothing will output as there are no sub-directories or files within that file.
 
 The working directory in this case would have also been `lecture1` because that is the directory that had been set in the previous example and had not been changed since then.
-***
-`cat`
 
+***
+
+`cat`
 
 <img width="306" alt="image" src="https://github.com/AnikAlam/cse15l-lab-reports/assets/55520027/32c024e3-fdef-4045-a2da-9193527de814">
 
-Finally onto the 'cat' command, after running it with no arguments, the terminal allowed me to continuously hit the enter key or type out any sort of text. If I did type out text and hit enter, the terminal would output the exact same text and return back to the previous stage of allowing me to hit enter or type in some input. Because I was unsure on how to escape or be able to enter in a new command, I created a new terminal in order to continue working on the lab. The working directory was the home directory. Through one of the TAs, I learned that it is possible to break out of the loop by pressing `control + c`.
+Finally onto the `cat` command, after running it with no arguments, the terminal allowed me to continuously hit the enter key or type out any sort of text. If I did type out text and hit enter, the terminal would output the exact same text and return back to the previous stage of allowing me to hit enter or type in some input. Because I was unsure on how to escape or be able to enter in a new command, I created a new terminal in order to continue working on the lab. The working directory was the home directory. Through one of the TAs, I learned that it is possible to break out of the loop by pressing `control + c`.
 
 The working directory in this case would have been the home directory as I had to escape and create a new terminal to start the process over.
 
