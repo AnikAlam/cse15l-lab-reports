@@ -102,5 +102,7 @@ $ grep -n "sulfur-utilization" ./technical/biomed/*.txt
 As seen in Example 1, the desired text was found on line `142` which can be seen in the code blocked below Example 1, and for Example 2, there are several results, each with their own corresponding line number listed by the command flag. This is useful for pinpointing appearances of whatever we choose to search in the event that we need to edit, replace, or utilize the information that is there. 
 
 The resources used to find the information for all of these command flags:
+
 1)https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix2
+
 2)https://www.linuxbuzz.com/grep-command-examples-linux/#5_Searching_the_line_or_word_along_with_the_line_numbers
