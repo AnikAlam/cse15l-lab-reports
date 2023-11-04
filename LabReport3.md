@@ -3,7 +3,7 @@
 ***
 ## Part 1 - Bugs
 
-##Part 2 - Researching Commands
+## Part 2 - Researching Commands
 
 The command that I chose to research was `grep`. The four command line options that I thought were interesting with `grep` are the following: `grep -r "desiredData *" ` which can search for a string within the current working direction as well as every other subdirectories, specifically with the `-r` flag. The next is `grep --color "desiredText" "desiredFile` which will change the color of whatever text is being searched for in the output to make it contrast from other kinds of text which is useful in the case that the operating system or terminal of choice that doesn't differentiate color. The third is the `-v` flag which will take all lines that match the given phrase in the command and then output every phrase that does NOT contain the given phrase given to the terminal. The fourth command uses the `-n` flag to search for given text in order to output what line number it is located. 
 
