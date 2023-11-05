@@ -4,3 +4,5 @@
 
 ### *[Lab Report 2](LabReport2.md)*
 
+### *[Lab Report 3](LabReport3.md)*
+
