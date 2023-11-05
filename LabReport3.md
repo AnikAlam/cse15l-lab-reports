@@ -3,6 +3,52 @@
 ***
 ## Part 1 - Bugs
 
+The following code block shows the test and the resulting test result as a failure.
+```
+@Test
+    public void testFilter() {
+        List<String> testList = new ArrayList<>();
+        StringChecker sc = new ListTests();
+        assertArrayEquals(new String[]{ "cats" }, ListExamples.filter(testList, sc).toArray());
+    }
+> Expected [cats] but was [end of array]
+```
+The following code in this case shows the test with a non-failure inducing input 
+```
+@Test
+    public void testFilter() {
+        List<String> testList = new ArrayList<>();
+        StringChecker sc = new ListTests();
+        assertArrayEquals(testList.toArray(), ListExamples.filter(testList, sc).toArray());
+    }
+```
+What can be seen as the issue is that the test in the first case will attempt to compare it to "cats" without ever having inserted the element into the newly created ArrayList utilized by the test. The original test is attempting to check for the value "cats" to a test list that contains no data which will always fail, and so by adding in a line of code to add the "cats" element into the instantiated arrayList, it will properly be able to search and verify the value stored. The first block of code shows that the test list reached the end of the array rather than any other value which displays the issue that was discussed, and the second one had passed because both empty arrays were compared to each other which would always work for that case but is not a proper test. In order to fix it, there is a simple change made which will be shown.
+
+BEFORE changes were made:
+```
+@Test
+    public void testFilter() {
+        List<String> testList = new ArrayList<>();
+        StringChecker sc = new ListTests();
+        assertArrayEquals(new String[]{ "cats"} , ListExamples.filter(testList, sc).toArray());
+    }
+```
+
+AFTER changes were made:
+```
+ @Test
+    public void testFilter() {
+        List<String> testList = new ArrayList<>();
+        StringChecker sc = new ListTests();
+        testList.add("cats");
+        testList.add("null");
+        testList.add("wowza!");
+        assertArrayEquals(new String[]{ "cats"} , ListExamples.filter(testList, sc).toArray());
+    }
+```
+After changes were made, I had added three entries to the `testList` and then ran the individual test which returned a successful result because despite adding multiple values after "cats", it still is successfully able to filer through the list and see that the value being compared to DOES exist and match, therefore it is comparatively successful to before when no value had been added to `testList` and resulted in a failed test.
+
+***
 ## Part 2 - Researching Commands
 
 The command that I chose to research was `grep`. The four command line options that I thought were interesting with `grep` are the following: `grep -r "desiredData *" ` which can search for a string within the current working direction as well as every other subdirectories, specifically with the `-r` flag. The next is `grep --color "desiredText" "desiredFile` which will change the color of whatever text is being searched for in the output to make it contrast from other kinds of text which is useful in the case that the operating system or terminal of choice that doesn't differentiate color. The third is the `-v` flag which will take all lines that match the given phrase in the command and then output every phrase that does NOT contain the given phrase given to the terminal. The fourth command uses the `-n` flag to search for given text in order to output what line number it is located. 
