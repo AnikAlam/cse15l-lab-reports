@@ -3,7 +3,7 @@
 ***
 ## Part 1 - Bugs
 
-The following code block shows the test and the resulting test result as a failure.
+The following code block shows the test and the image after it shows that `testFilter` had failed.
 ```
 @Test
     public void testFilter() {
@@ -11,9 +11,11 @@ The following code block shows the test and the resulting test result as a failu
         StringChecker sc = new ListTests();
         assertArrayEquals(new String[]{ "cats" }, ListExamples.filter(testList, sc).toArray());
     }
-> Expected [cats] but was [end of array]
 ```
-The following code in this case shows the test with a non-failure inducing input 
+
+![image](https://github.com/AnikAlam/cse15l-lab-reports/assets/55520027/b9124ba5-0878-45dd-8e35-02e8bcb28ac6)
+
+The following code in this case shows the test and the image after it shows the passing result after the change had been made.
 ```
 @Test
     public void testFilter() {
@@ -22,6 +24,10 @@ The following code in this case shows the test with a non-failure inducing input
         assertArrayEquals(testList.toArray(), ListExamples.filter(testList, sc).toArray());
     }
 ```
+
+![image](https://github.com/AnikAlam/cse15l-lab-reports/assets/55520027/69b33b5d-e296-42b4-aa8c-ce7bb8b45d69)
+
+
 What can be seen as the issue is that the test in the first case will attempt to compare it to "cats" without ever having inserted the element into the newly created ArrayList utilized by the test. The original test is attempting to check for the value "cats" to a test list that contains no data which will always fail, and so by adding in a line of code to add the "cats" element into the instantiated arrayList, it will properly be able to search and verify the value stored. The first block of code shows that the test list reached the end of the array rather than any other value which displays the issue that was discussed, and the second one had passed because both empty arrays were compared to each other which would always work for that case but is not a proper test. In order to fix it, there is a simple change made which will be shown.
 
 BEFORE changes were made:
@@ -107,22 +113,28 @@ $ grep -v "the" ./technical/911report/preface.txt
             PREFACE
                 Democrats chosen by elected leaders from our nation's capital at a time of great
                 avoid such tragedy again?
+            Our mandate was sweeping. The law directed us to investigate "facts and circumstances
+                to intelligence agencies, law enforcement agencies, diplomacy, immigration issues
+                reviewed more than 2.5 million pages of documents and interviewed more than 1,200
+                current and previous administrations who had responsibility for topics covered in
+                our mandate. We have sought to be independent, impartial, thorough, and nonpartisan.
+                public testimony from 160 witnesses.
                 27, 2002).
 ```
-
-![image](https://github.com/AnikAlam/cse15l-lab-reports/assets/55520027/76acbae3-059b-419c-9ad8-b5580941b8c9)
-
+The code block above displays only a portion of the output from that command as it yields a large number of output lines that I will omit for the sake of reducing the size bloat of the markdown block.
 
 Example 2: Outputting every line that does not contain `and`
 ```
 Anik@DESKTOP-67GBBR1 MINGW64 ~/docsearch (main)
 $ grep -v "and" ./technical/911report/preface.txt
             PREFACE
-                Democrats chosen by elected leaders from our nation's capital at a time of great
-                partisan division-have come together to present this report without dissent.
+                Democrats chosen by elected leaders from our nation's capital at a time of great    
+                partisan division-have come together to present this report without dissent.        
+                avoid such tragedy again?
+                Commission on Terrorist Attacks Upon the United States (Public Law 107-306, November
+                27, 2002).
 ```
-
-![image](https://github.com/AnikAlam/cse15l-lab-reports/assets/55520027/3cfed400-9f0b-4ba1-8077-800433729146)
+The code block above also only displays a small portion of the output as it is also incredibly long, and I am choosing to display a small portion to prevent size bloat.
 
 As seen in both examples and their subsequent pictures to capture the entire output, all of the lines shown do NOT include the term that was specified in the command inquiry which I thought to be rather interesting. As seen by both outputs, in this case where there are are a plethora of files, the usage can vary, but in cases where you want to exclude certain data, results, or the like, this command flag is perfect for doing so. 
 
@@ -149,6 +161,6 @@ As seen in Example 1, the desired text was found on line `142` which can be seen
 
 The resources used to find the information for all of these command flags:
 
-1)https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix2
+1)[Resource 1: Digital Ocean](https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix2)
 
-2)https://www.linuxbuzz.com/grep-command-examples-linux/#5_Searching_the_line_or_word_along_with_the_line_numbers
+2)[Resource 2: Linux Buzz](https://www.linuxbuzz.com/grep-command-examples-linux/#5_Searching_the_line_or_word_along_with_the_line_numbers)
