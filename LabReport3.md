@@ -80,7 +80,7 @@ $ grep -r "sulfur-utilization" ./technical/
 Both examples highlight how I was able to take specific phrases and search for them, not only in the `./technical` directory, which is the current working directory as seen in the examples, but also in every subsequently in other subdirectories. While I did not post other examples because general words result in an incredibly long output, there are results in various different subdirectories for some search options which is useful in determining similar information located in slightly varying locations which would take a long time to search for manually. 
 
 Moving onto the second command flag `--color`: This flag modifies the desired search result so that it appears in a different color to differentiate it (Source 1). 
-Example 1: Searching for "hypergeometric probability" and changing the color to stand out
+Example 1: Searching for "hypergeometric probability" and changing the color to stand out. I chose to include the associated image rather than a text block because the alteration in color would not appear unless I included it as an image.
 ```
 Anik@DESKTOP-67GBBR1 MINGW64 ~/docsearch (main)
 $ grep --color "hypergeometric probability" ./technical/biomed/*.txt
@@ -89,7 +89,7 @@ $ grep --color "hypergeometric probability" ./technical/biomed/*.txt
 
 ![image](https://github.com/AnikAlam/cse15l-lab-reports/assets/55520027/b6158aad-bbdc-434e-a517-110983091535)
 
-Example 2: Searching for "sulfur-utilization" and changing the color to stand out
+Example 2: Searching for "sulfur-utilization" and changing the color to stand out. I also included the image for the same reason as before, to demonstrate that it will actually change the color which cannot be shown through a code block.
 ```
 Anik@DESKTOP-67GBBR1 MINGW64 ~/docsearch (main)
 $ grep --color "sulfur-utilization" ./technical/biomed/*.txt
